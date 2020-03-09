@@ -1,0 +1,557 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="John Doe">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>FinDoc</title>
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/ico" href="/static/images/Stethoscope_48px.png" />
+    <!-- Plugin-CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/css/icofont.css">
+    <link rel="stylesheet" href="/static/css/magnific-popup.css">
+    <link rel="stylesheet" href="/static/css/animate.css">
+    <!-- Main-Stylesheets -->
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+    <script src="/static/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<style>
+    body{
+            cursor:default;
+        }
+</style>
+
+<body class="site2" data-spy="scroll" data-target=".mainmenu-area">
+    <!--Preloader-->
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Mainmenu-Area -->
+    <nav class="navbar mainmenu-area" data-spy="affix" data-offset-top="197">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="search-box" class="collapse">
+                        <form action="#">
+                            <input type="search" class="form-control" placeholder="What do you want to know?">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="navbar-header smoth">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainmenu">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span> 
+                        </button>
+                        <a class="navbar-brand" href="#home-area"><img style="height: 50px;position:absolute;top:-1px;left:-170px" src="/static/images/toydoc.png" alt=""></a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-right" id="mainmenu">
+                        
+                        <ul class="nav navbar-nav primary-menu">
+                            <li class="active"><a href="#home-area">Home</a></li>
+                            <li><a href="#about-area">About Us</a></li>
+                            <li><a href="#portfolio-area">Portfolio</a></li>
+                            <li><a href="#price-area">Price</a></li>
+                            <li><a href="#team-area">Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {%with messages = get_flashed_messages(with_categories=true) %}
+            {%if messages%}
+               {% for category, message in messages %}
+                  <div class="alert alert-{{ category }}">
+                      {{ message }}
+                  </div>
+                 {% endfor %}
+              {%endif%}
+           {%endwith%}
+        </div>
+    </nav>
+    <!-- Mainmenu-Area-/ -->
+
+
+    <!--Header-Area-->
+    <header class="header-area overlay" id="home-area">
+        <div class="vcenter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
+                        <div class="header-text">
+                            <div class="wow fadeInUp upper latter-space" data-wow-delay="0.2s">An Online Consultation room</div>
+                            <h2 class="header-title wow fadeInUp upper" data-wow-delay="0.4s">fin<span style="color: dodgerblue">Doc</span> <span class="dot"></span></h2>
+                            <div class="wow fadeInUp" data-wow-delay="0.7s">
+                                <a href="#contact-area" class="bttn bttn-lg bttn-primary">Contact Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="smoth">
+            <a href="#about-area" class="scrolldown"><i class="icofont icofont-bubble-down"></i></a>
+        </div>
+    </header>
+    <!--Header-Area-/-->
+    
+    <header id="about-area">
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="video-box">
+                        <img src="/static/images/aboutdoc.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 wow fadeInUp">
+                    <div class="page-title">
+                        <h2 class="title">Why Choose Us?</h2>
+                        <ul class="tabs-list-2">
+                            <li class="active"><a data-toggle="pill" href="#our_mission">Our Mission</a></li>
+                            <li><a data-toggle="pill" href="#our_vission">Our Vission</a></li>
+                            <li><a data-toggle="pill" href="#our_support">Our Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div id="our_mission" class="tab-pane fade in active">
+                            
+                            <p style="font-size:18px"><q><em>To promote good health and reduce illness. Also, to ensure access to good and <span style="color:green">affordable health care</span> and pursue medical excellence.</em></q></p>
+                            <p style="font-size:13pt">Also to help reduce the time wasted in joing long queues. </p>
+                            <!-- Left-aligned -->
+                            
+                        </div>
+                        <div id="our_vission" class="tab-pane fade">
+                            <p style="font-size:18px"><q><em>To provide and manage accessible health services on an online platform.</em></q></p>
+                            <!-- Left-aligned -->
+                        </div>
+                        <div id="our_support" class="tab-pane fade">
+                            <p style="font-size:18px"><q><em>we seek to create a platform that will holistically involve people of all classes and endavour to have access to affordable and quick health care.</em></q></p>
+                            
+                            <!-- Left-aligned -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    </header>
+    
+    <!-- Portfolio-Area -->
+    <section class="section-padding gray-bg" id="portfolio-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                    <div class="page-title text-center">
+                        <h2 class="title">Portfolio Project</h2>
+                        <p>Take your time to browse through</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- Mixitup controls -->
+                    <ul class="filter-controls text-center">
+                        <li class="active filter" data-filter="all">All</li>
+                        <li class="active filter" data-filter=".graphics">Doctors</li>
+                        <li class="filter" data-filter=".ux_ui">Equipments</li>
+                        <li class="filter" data-filter=".web_design">Anatomy</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" id="filtering">
+                <div class="col-xs-6 col-sm-4 col-md-3 mix graphics developing">
+                    <div class="filter-box">
+                        <div class="filter-image">
+                            <img src="/static/images/doc.jpg" alt="">
+                        </div>
+                        <div class="filter-hover">
+                            <h5>Doctors</h5>
+                            <a href="/static/images/doc.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 mix ux_ui ">
+                    <div class="filter-box">
+                        <div class="filter-image">
+                            <img src="/static/images/equipment.jpg" alt="">
+                        </div>
+                        <div class="filter-hover">
+                            <h5>Equipments</h5>
+                            <a href="/static/images/equipment.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 mix web_design photography">
+                        <div class="filter-box">
+                            <div class="filter-image">
+                                <img src="/static/images/anatomy2.jpg" alt="">
+                            </div>
+                            <div class="filter-hover">
+                                <h5>Anatomy</h5>
+                                <a href="/static/images/anatomy2.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 mix graphics ">
+                    <div class="filter-box">
+                        <div class="filter-image">
+                            <img  src="/static/images/doc2.jpg" alt="">
+                        </div>
+                        <div class="filter-hover">
+                            <h5>Doctors</h5>
+                            <a href="/static/images/doc2.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 mix ux_ui developing">
+                    <div class="filter-box">
+                        <div class="filter-image">
+                            <img src="/static/images/equipment2.jpg" alt="">
+                        </div>
+                        <div class="filter-hover">
+                            <h5>Equipments</h5>
+                            <a href="/static/images/equipment2.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 mix web_design photography">
+                    <div class="filter-box">
+                        <div class="filter-image">
+                            <img src="/static/images/anatomy.jpg" alt="">
+                        </div>
+                        <div class="filter-hover">
+                            <h5>Anatomy</h5>
+                            <a href="/static/images/anatomy.jpg" class="filter-popup" data-effect="mfp-zoom-in"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio-Area / -->
+
+
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                    <div class="page-title text-center">
+                        <h2 class="title">Our Working Process</h2>
+                        <p>Our users must feel at home when consulting with us</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row process text-center">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="single-process">
+                        <div class="process-icon">
+                            <i class="icofont icofont-pie"></i>
+                        </div>
+                        <h3>Investigation</h3>
+                        <p>You can browse through the website to know more of what we do.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="single-process">
+                        <div class="process-icon">
+                            <i class="icofont icofont-users-alt-1"></i>
+                        </div>
+                        <h3>Consultation</h3>
+                        <p>There are many medical practioners ready to help you with your problems.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="single-process">
+                        <div class="process-icon">
+                            <i class="icofont icofont-brainstorming"></i>
+                        </div>
+                        <h3>Planning</h3>
+                        <p>We put everyone on our priority list to ensure that the proper services are rendered.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="single-process">
+                        <div class="process-icon">
+                            <i class="icofont icofont-settings-alt"></i>
+                        </div>
+                        <h3>Working</h3>
+                        <p>Our team of professional doctors are guaranteed to help solve your problems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Price-Area -->
+    <section class="section-padding gray-bg" id="price-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                    <div class="page-title text-center">
+                        <h2 class="title">Pricing Plan</h2>
+                        <p style="font-weight:bold">Please note that services are free till 30 days of use.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul class="price-tabs">
+                        <li class="active"><a data-toggle="pill" href="#yearly">Yearly Packages</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row prices tab-content">
+                <div id="monthly" class="tab-pane fade in active">
+                    <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.2s" style="left:260px">
+                        <div class="price-box">
+                            <h4>Basic</h4>
+                            <h3 class="amount">&#8373;60 /<span>Year</span></h3>
+                            <ul class="price-list">
+                                <li>Free Consultation for 6 months</li>
+                                <li>Personal service for 6 months</li>
+                                <li>Live chat with different field of doctors</li>
+                                <li>Deliver superior customer service</li>
+                            </ul>
+                            <a href="{{url_for('sub')}}" class="bttn bttn-sm bttn-default">Purchase Now</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.8s" style="left:400px">
+                        <div class="price-box">
+                            <h4>Ultimate</h4>
+                            <h3 class="amount">&#8373;100 /<span>Year</span></h3>
+                            <ul class="price-list">
+                                <li>Free Consultation for a year</li>
+                                <li>Personal service for a year</li>
+                                <li>Live chat with different field of doctors</li>
+                                <li>Deliver superior customer service</li>
+                            </ul>
+                            <a href="{{url_for('sub')}}" class="bttn bttn-sm bttn-default">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Price-Area -->
+
+    <!-- Team-Area -->
+    <section class="section-padding" id="team-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                    <div class="text-center">
+                        <h2 class="title">Our expert team</h2>
+                        <p>Meet the experts of this system.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-7 col-md-3">
+                    <div class="team-box two wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="team-image">
+                            <img src="/static/images/kay2.png" alt="">
+                        </div>
+                        <div class="team-hover text-center">
+                            <h5 class="t_title">DAddo-Wiafe Anyan Nana</h5>
+                            <span class="t_sub_title">Frontend Developer</span>
+                            <p>Codes places as the center of attraction.</p>
+                            <br />
+                            <div class="team-social-menu">
+                                <a href="#"><i class="icofont icofont-social-facebook"></i></a>
+                                <a href="#"><i class="icofont icofont-social-twitter"></i></a>
+                                <a href="#"><i class="icofont icofont-social-linkedin"></i></a>
+                                <a href="#"><i class="icofont icofont-social-pinterest"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3" style="right:-140px;">
+                    <div class="team-box two wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-image">
+                            <img style= "height:350px" src="/static/images/kojo.jpg" alt="">
+                        </div>
+                        <div class="team-hover text-center">
+                            <h5 class="t_title">Christian B. Egyir</h5>
+                            <span class="t_sub_title">Backend Expert</span>
+                            <p>I love to code and solve problems.</p>
+                            <br />
+                            <div class="team-social-menu">
+                                <a href="#"><i class="icofont icofont-social-facebook"></i></a>
+                                <a href="#"><i class="icofont icofont-social-twitter"></i></a>
+                                <a href="#"><i class="icofont icofont-social-linkedin"></i></a>
+                                <a href="#"><i class="icofont icofont-social-pinterest"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3" style="right:-270px;">
+                    <div class="team-box two wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="team-image">
+                            <img src="/static/images/theo.jpg" alt="">
+                        </div>
+                        <div class="team-hover text-center">
+                            <h5 class="t_title">Theophilus K. Boadu Lartey</h5>
+                            <span class="t_sub_title">Professional consultant</span>
+                            <p>Service with passion..</p>
+                            <br />
+                            <div class="team-social-menu">
+                                <a href="#"><i class="icofont icofont-social-facebook"></i></a>
+                                <a href="#"><i class="icofont icofont-social-twitter"></i></a>
+                                <a href="#"><i class="icofont icofont-social-linkedin"></i></a>
+                                <a href="#"><i class="icofont icofont-social-pinterest"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team-Area / -->
+
+
+
+    <section class="section-padding gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                    <div class="page-title text-center">
+                        <h2 class="title">What Our Client Say</h2>
+                        <p>We are glad to receive great response from our users.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+                    <div class="testimonials">
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-text">
+                                <em>I had troubles speaking in public about my issues and I was introduced to FinDoc.Consultant-to-Customer privelages are very good and these privelages are never broken no matter what.</em>
+                            </div>
+                            <h3>Sam Tulley</h3>
+                            <h6>Land and Construction expert</h6>
+                            
+                        </div>
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-text">
+                                <em>I no longer have join queues in hospitals because of FinDoc and I'm glad they provide quality consultation as well, Thank you findoc.</em>
+                            </div>
+                            <h3>Janet Agyei</h3>
+                            <h6>Accountant, GTA Bank</h6>
+                        </div>
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-text">
+                                <em>My job is very tedious and prevents me from going to hospitals for regular checkups but thanks to FinDoc I can work and also consult my doctor on an online platform. It's very great.</em>
+                            </div>
+                            <h3>Elena Bosiako</h3>
+                            <h6>Trader</h6>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer-Area / -->
+    
+    <footer class="footer-area">
+        <div class="footer-top section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-3">
+                        <div class="footer-text">
+                            <img style="position:absolute;bottom:30px;left:-19px;top:3px;height:32px" src="static/images/Stethoscope_48px.png" alt="">
+                            <h4 style="font-size:30px" class="upper">findoc</h4>
+                            <p>Your one stop for your online consultation</p>
+                            <div class="social-menu">
+                                <a href="https://facebook.com"><i class="icofont icofont-social-facebook"></i></a>
+                                <a href="#"><i class="icofont icofont-social-twitter"></i></a>
+                                <a href="#"><i class="icofont icofont-social-google-plus"></i></a>
+                                <a href="#"><i class="icofont icofont-social-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="copyright">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made  by HBOT<i class="icofont icofont-doctor-alt" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer-Area / -->
+
+
+    <!--Vendor-JS-->
+    <script src="/static/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="/static/js/vendor/bootstrap.min.js"></script>
+    <!--Plugin-JS-->
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <script src="/static/js/appear.js"></script>
+    <script src="/static/js/bars.js"></script>
+    <script src="/static/js/waypoints.min.js"></script>
+    <script src="/static/js/counterup.min.js"></script>
+    <script src="/static/js/easypiechart.min.js"></script>
+    <script src="/static/js/mixitup.min.js"></script>
+    <script src="/static/js/contact-form.js"></script>
+    <script src="/static/js/scrollUp.min.js"></script>
+    <script src="/static/js/magnific-popup.min.js"></script>
+    <script src="/static/js/wow.min.js"></script>
+    <!--Main-active-JS-->
+    <script src="/static/js/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXZ3vJtdK6aKAEWBovZFe4YKj1SGo9V20&callback=initMap"></script>
+    <script src="/static/js/maps.js"></script>
+
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5d36f7729b94cd38bbe8d47e/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+
+</html>
